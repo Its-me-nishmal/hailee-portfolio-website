@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp API UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f3ec;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      max-width: 500px;
+    }
+
+    .badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.75rem;
+      border-radius: 0.75rem;
+      color: white;
+    }
+
+    .badge.app { background-color: #00bfa5; }
+    .badge.send { background-color: #2979ff; }
+    .badge.group { background-color: #8e24aa; }
+
+    .title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .description {
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="badge app">App</div>
+    <div class="title">Login</div>
+    <div class="description">Scan your QR code to access all API capabilities.</div>
+  </div>
+
+  <div class="card">
+    <div class="badge app">App</div>
+    <div class="title">Login with Code</div>
+    <div class="description">Enter your pairing code to log in and access your devices.</div>
+  </div>
+
+  <div class="card">
+    <div class="badge send">Send</div>
+    <div class="title">Send Message</div>
+    <div class="description">Send any message to user or group.</div>
+  </div>
+
+</body>
+</html>
